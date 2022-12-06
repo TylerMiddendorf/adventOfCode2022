@@ -1,5 +1,4 @@
 import java.io.File;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main{
@@ -7,10 +6,8 @@ public class Main{
         File file = new File("input.txt");
         Scanner sc = new Scanner(file);
         int curr = 0;
-        while (sc.hasNextLine()){
+        while (sc.hasNextLine())
           curr += getScore(getChar(sc.nextLine()));
-          System.out.println(curr);
-        }
         System.out.println(curr);
         sc.close();
     }
@@ -33,7 +30,6 @@ public class Main{
                         'v','w','x','y','z','A','B','C','D','E','F',
                         'G','H','I','J','K','L','M','N','O','P','Q',
                         'R','S','T','U','V','W','X','Y','Z'};
-        System.out.println(new String(data).indexOf(in) + " " +in);
         return new String(data).indexOf(in);
     }
 
