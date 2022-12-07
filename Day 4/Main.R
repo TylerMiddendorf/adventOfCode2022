@@ -9,6 +9,6 @@ for(row in 1:nrow(combined_data)){
       num3 <- as.integer(combined_data[row,3])
       num4 <- as.integer(combined_data[row,4])
       if((num1 <= num3 & num2 >= num4) | (num1 >= num3 & num2 <= num4))
-            counter <- counter + 1;
+            counter <- counter + 1
 }
 print(counter)
